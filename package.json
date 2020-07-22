@@ -1,0 +1,47 @@
+{
+  "name": "node-module-template",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "kcd-scripts build",
+    "lint": "kcd-scripts lint",
+    "setup": "npm install && npm run validate -s",
+    "test": "kcd-scripts test",
+    "test:update": "npm test -- --updateSnapshot --coverage",
+    "validate": "kcd-scripts validate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ninjakttty/node-module-template.git"
+  },
+  "keywords": [],
+  "author": "Yuri A Parsons <yuri@ninjakitty.net> (https://github.com/ninjakttty)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ninjakttty/node-module-template/issues"
+  },
+  "homepage": "https://github.com/ninjakttty/node-module-template#readme",
+  "dependencies": {
+    "np": "^6.3.2",
+    "@babel/runtime": "^7.10.5"
+  },
+  "devDependencies": {
+    "kcd-scripts": "^6.2.4"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/kcd-scripts/eslint.js"
+  },
+  "eslintIgnore": [
+    "node_modules",
+    "coverage",
+    "dist"
+  ],
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  }
+}
